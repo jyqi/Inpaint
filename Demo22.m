@@ -18,10 +18,10 @@ end
 
 % canonSize = [ 200 300  ];
 % canonSizeColor = [200 300 3];
-canonSize = [ 794 596  ];
-canonSizeColor = [794 596 3];
-canonicalCoords = [169 221 196; ...
-                              290 253 238];
+canonSize = [ 270 480  ];
+canonSizeColor = [270 480 3];
+canonicalCoords = [251 267 257; ...
+                              67 66 84];
                           
 transformationInit = 'AFFINE';
 [IOR, tmpT, numImages, inv_trans] = get_training_images( imagePath, pointPath, userName, canonicalCoords, transformationInit) ;         
@@ -80,10 +80,10 @@ end
   save(fullfile(destRoot, '/T.mat'), 'T');
   save(fullfile(destRoot, '/R.mat'), 'R');
 %% plot the results
-numImage = 11;
+numImage = 12;
 
-layout.xI = 11 ;
-layout.yI = 1 ;
+layout.xI = 3 ;
+layout.yI = 4 ;
 layout.gap = 4 ;
 layout.gap2 = 2 ;
 % rasl_plot(numImages, canonSize, layout, Fotb, Tb, Rb);
